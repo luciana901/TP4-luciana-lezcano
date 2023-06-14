@@ -1,4 +1,4 @@
-// Controladores para cada uno //
+// Controladores //
 exports.vistaGet=async(req,res)=>{
     res.send("Vista GET");
 };

@@ -1,14 +1,16 @@
-const express=require('express');
-const routes=express.Router();
-const controller=require('../controllers/controller.js');
+const express = require("express");
 
-routes.get('/',controller.vistaGet);
+const routes = express.Router();
 
-routes.post('/',controller.vistaPost);
+const controller = require("../controllers/controller.js");
 
-routes.put('/',controller.vistaPut);
+routes.get("/", controller.vistaGet);
 
-routes.delete('/',controller.vistaDelete);
+routes.post("/", controller.vistaPost);
+
+routes.put("/", controller.vistaPut);
+
+routes.delete("/", controller.vistaDelete);
 
 // Exporta las rutas //
-module.exports=routes;
+module.exports = routes;
